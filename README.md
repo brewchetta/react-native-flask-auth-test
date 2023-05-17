@@ -16,7 +16,7 @@ IMPORTANT: You will need to change the URL in App.js every time you restart
 ngrok. You will NOT need to restart ngrok if you restart the flask server or
 react-native client.
 
-Run these commands to get everything set up:
+In another terminal run these commands to get everything set up:
 
 ```bash
 pipenv install
@@ -32,7 +32,7 @@ python seed.py
 flask run --debug
 ```
 
-Run the client with:
+In another terminal run the client with:
 ```bash
 npm start --prefix client
 ```
