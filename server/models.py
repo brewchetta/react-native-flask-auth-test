@@ -9,4 +9,13 @@ metadata = MetaData(naming_convention={
 
 db = SQLAlchemy(metadata=metadata)
 
-# write your models here!
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String)
+    password_hash = db.Column(db.String)
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "username": self.username
+        }
