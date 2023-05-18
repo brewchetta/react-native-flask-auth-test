@@ -1,0 +1,15 @@
+CLIENT (react native on ur phone) <--------------------------> SERVER (flask)
+
+1. Login ----------------------------------------------------> Validate & authenticate
+                                                                  Create token
+  <----------------------------------------------------------- SEND RESPONSE (user information)
+We have the token and the user
+on the front end
+
+
+fetch('/check_session')
+2. Check session --------------------------------------------> Gets id in the token
+                                                                  Find user by id
+userState       <--------------------------------------------- SEND RESPONSE (user info)
+
+JWT
